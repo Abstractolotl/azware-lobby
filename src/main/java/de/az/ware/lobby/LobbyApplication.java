@@ -1,5 +1,6 @@
 package de.az.ware.lobby;
 
+import de.az.ware.connection.packet.RequestMapper;
 import de.az.ware.lobby.controller.LobbyInterceptor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,6 +12,11 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EntityScan("de.az.ware.common.*") //Needed for JPA Stuff
 @EnableScheduling //For queueing in LobbyController
 public class LobbyApplication {
+
+    @Bean
+    public RequestMapper requestMapper(){
+        return new RequestMapper();
+    }
 
     @Bean
     public LobbyInterceptor interceptor(){

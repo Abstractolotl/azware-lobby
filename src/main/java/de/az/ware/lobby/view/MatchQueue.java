@@ -1,4 +1,4 @@
-package de.az.ware.lobby.controller;
+package de.az.ware.lobby.view;
 
 import de.az.ware.common.model.MatchType;
 import de.az.ware.lobby.model.LobbySession;

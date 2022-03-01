@@ -6,7 +6,7 @@ import de.az.ware.common.model.MatchType;
 import de.az.ware.common.packets.LobbyQueue;
 import de.az.ware.common.packets.LobbyQueuePoll;
 import de.az.ware.lobby.controller.service.LobbyQueueService;
-import de.az.ware.lobby.controller.service.MatchService;
+import de.az.ware.lobby.controller.service.MatchingService;
 import de.az.ware.lobby.model.LobbySession;
 import de.az.ware.lobby.model.exception.LobbyFullException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +24,7 @@ public class LobbyController {
 
     @Autowired private LobbySession session;
     @Autowired private LobbyQueueService queueService;
-    @Autowired private MatchService matchMakingService;
+    @Autowired private MatchingService matchMakingService;
 
     private Map<MatchType, Integer> queueLengths;
 
