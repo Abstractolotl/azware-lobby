@@ -17,6 +17,7 @@ allprojects {
 
 dependencies {
     implementation 'com.github.Abstractolotl:azware-common:main-SNAPSHOT'
+    implementation 'com.github.Abstractolotl:az-connection:main-SNAPSHOT'
 
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'

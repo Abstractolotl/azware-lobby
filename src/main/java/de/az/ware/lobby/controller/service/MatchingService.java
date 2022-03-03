@@ -3,7 +3,7 @@ package de.az.ware.lobby.controller.service;
 import de.az.ware.common.model.LobbyUser;
 import de.az.ware.common.model.MatchInformation;
 import de.az.ware.common.model.MatchType;
-import de.az.ware.common.packets.MatchCreation;
+import de.az.ware.common.packets.request.MatchCreation;
 import de.az.ware.lobby.view.MatchServer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
